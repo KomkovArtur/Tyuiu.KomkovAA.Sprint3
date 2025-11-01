@@ -33,11 +33,13 @@ internal class Program
         Console.WriteLine("+----------+----------+");
         Console.WriteLine("+    X     +   f(x)   +");
         Console.WriteLine("+----------+----------+");
-        for (int i = 0; i <= len - 1; i++)
+        for (int i = 0; i <= valueArray.Length - 1; i++)
         {
-            Console.WriteLine($"{startValue + i}           {valueArray[i]}  ");
+            Console.WriteLine("|{0,5:d}     |{1,6:f2}    |", startValue, valueArray[i]);
             startValue++;
         }
+
+
         Console.WriteLine("+----------+----------+");
     }
 }
